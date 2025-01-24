@@ -21,7 +21,7 @@
     let PXdeLink = 1
     let PYdeLink = 1
 
-    const canvas = document.gettElementById("mycanvas")
+    const canvas = document.getElementById("mycanvas")
     const ctx = canvas.getContext("2d")
     const image = document.getElementById("Mapa_Dungeon_Link")
     const imagen = document.getElementById('sprite');
@@ -260,7 +260,7 @@
                 const estiloActual = window.getComputedStyle(imagen);
                 const posicionActual = parseInt(estiloActual.left);
                 imagen.style.top = (posicionActual + 16)
-            };
+            }
             else if (mapa[PYdeLink+1,PXdeLink] = "P")
                 {
                 PYdeLink = 9
@@ -286,7 +286,7 @@
                 const estiloActual = window.getComputedStyle(imagen);
                 const posicionActual = parseInt(estiloActual.left);
                 imagen.style.top = (posicionActual - 16)
-            };
+            }
             else if (mapa[PYdeLink-1,PXdeLink] = "P")
                 {
                 PYdeLink = 9
@@ -312,7 +312,7 @@
                 const estiloActual = window.getComputedStyle(imagen);
                 const posicionActual = parseInt(estiloActual.left);
                 imagen.style.left = (posicionActual - 16)
-            };
+            }
             else if (mapa[PYdeLink+1,PXdeLink] = "P")
                 {
                 PYdeLink = 9
@@ -338,7 +338,7 @@
                 const estiloActual = window.getComputedStyle(imagen);
                 const posicionActual = parseInt(estiloActual.left);
                 imagen.style.left = (posicionActual + 16)
-            };
+            }
             else if (mapa[PYdeLink+1,PXdeLink] = "P")
                 {
                 PYdeLink = 9
